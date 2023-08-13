@@ -1,0 +1,96 @@
+@import 'normalize.css';
+
+@font-face {
+	font-family: 'Jost';
+	src: local('Jost'),
+		url('./fonts/Jost/Jost-VariableFont_wght.ttf') format('truetype');
+
+}
+
+.App {}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 500px;
+}
+
+.title {
+	font-family: 'Jost';
+	font-size: calc(2em*1.5);
+}
+
+.input {
+	display: flex;
+	font-family: 'Jost';
+	font-size: calc(1em*1.2);
+	width: 100%;
+}
+
+.input>input,
+button {}
+
+.input>button {
+	margin-left: 10px;
+	border: 1px solid;
+	border-radius: 5px;
+	width: 20%;
+
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 15px;
+	font-family: 'Jost';
+}
+
+.todo {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	margin: 5px 0;
+}
+
+.todo>p {
+	width: 80%;
+	align-self: center;
+	margin: 0;
+}
+
+.isDone>p {
+	text-decoration: line-through;
+}
+
+.todo-check {
+	margin-left: 10px;
+	width: 20%;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.todo-done,
+.todo-delete {}
+
+.todo-done {
+	margin-top: 0;
+	width: 32px;
+	height: 32px;
+	margin-right: 5px;
+}
+
+.todo-delete {
+	padding: 0;
+}
+
+.todo-delete>svg {
+	pointer-events: none;
+}
